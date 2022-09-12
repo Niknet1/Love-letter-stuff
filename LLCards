@@ -1,0 +1,16 @@
+import javax.swing.JFrame;
+
+public class LLCards extends JFrame{
+	private static final int WIDTH = 800;
+	private static final int HEIGHT = 1600;
+	
+	public LLCards(String title) {
+		super(title);
+		setSize(WIDTH,HEIGHT);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		//add(new FirstKeyListenerPanel());
+		add(new LLCardsPanel());
+		setVisible(true);
+	}
+	
+}
